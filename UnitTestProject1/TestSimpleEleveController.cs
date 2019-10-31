@@ -65,9 +65,9 @@ namespace WebApplication1
         private List<Eleve> GetTestEleves()
         {
             var testEleves = new List<Eleve>();
-            testEleves.Add(new Eleve { Id=1, Nom = "BIRAM", Prenom = "Steeve Ursil", Age="26", Matricule="2546GERT44" });
-            testEleves.Add(new Eleve { Id=2, Nom = "POUTONG", Prenom = "Thierry", Age = "26", Matricule = "278EYTUO94" });
-            testEleves.Add(new Eleve { Id=3, Nom = "KENTSA", Prenom = "Arthur", Age = "26", Matricule = "874FGKUR78" });
+            /*testEleves.Add(new Eleve { Id=1, Nom = "BIRAM", Prenom = "Steeve Ursil", Age="26", Matricule="2546GERT44", Classe="2nd" });
+            testEleves.Add(new Eleve { Id=2, Nom = "POUTONG", Prenom = "Thierry", Age = "26", Matricule = "278EYTUO94", Classe = "2nd" });
+            testEleves.Add(new Eleve { Id=3, Nom = "KENTSA", Prenom = "Arthur", Age = "26", Matricule = "874FGKUR78", Classe = "2nd" });*/
 
             return testEleves;
         }
