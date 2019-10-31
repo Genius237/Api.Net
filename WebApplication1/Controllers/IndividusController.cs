@@ -15,8 +15,13 @@ namespace WebApplication1.Controllers
 {
     public class IndividusController : ApiController
     {
-        private TestEntities1 db = new TestEntities1();
+        //private TestEntities1 db = new TestEntities1();
+        private readonly TestEntities1 db;
 
+        public IndividusController(TestEntities1 dbContext)
+        {
+            db = dbContext;
+        }
         // GET: api/Individus
         public IQueryable<Individu> GetIndividus()
         {

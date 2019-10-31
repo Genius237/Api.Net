@@ -17,5 +17,12 @@ namespace WebApplication1.Models
         public new int Id { get; set; }
         public string Matricule { get; set; }
         public string Classe { get; set; }
+
+        public Eleve(string Nom, string Prenom, string Age, string Matricule, string Classe)
+            : base(Nom, Prenom, Age)
+        {
+            this.Matricule = Matricule;
+            this.Classe = Classe;
+        }
     }
 }

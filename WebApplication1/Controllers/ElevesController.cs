@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.EnterpriseServices.Internal;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -15,7 +16,14 @@ namespace WebApplication1.Controllers
 {
     public class ElevesController : ApiController
     {
-        private TestEntities1 db = new TestEntities1();
+        //private TestEntities1 db = new TestEntities1();
+
+        private readonly TestEntities1 db;
+
+        public ElevesController(TestEntities1 dbContext)
+        {
+            db = dbContext;
+        }
 
         // GET: api/Eleves
         public IQueryable<Eleve> GetEleves()

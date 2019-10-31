@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WebApplication1.Models;
 
 namespace WebApplication1.Models
 {
@@ -13,9 +14,9 @@ namespace WebApplication1.Models
 
         public EleveRepository()
         {
-            Add(new Eleve { Nom="BIRAM", Prenom="Steeve Ursil" , Matricule = "1145EYRU35", Classe = "3ième" });
-            Add(new Eleve { Nom = "POUTONG", Prenom = "Thierry", Matricule = "1145KJDU45", Classe = "2nd" });
-            Add(new Eleve { Nom = "KENTSA", Prenom = "Arthur", Matricule = "1145KJDU45", Classe = "Tle" });
+            /*Add(new Eleve { Nom = "BIRAM", Prenom ="Steeve Ursil" , Age="15", Matricule = "1145EYRU35", Classe = "3ième" });
+            Add(new Eleve { Nom = "POUTONG", Prenom = "Thierry", Age = "16", Matricule = "1145KJDU45", Classe = "2nd" });
+            Add(new Eleve { Nom = "KENTSA", Prenom = "Arthur", Age = "17", Matricule = "1145KJDU45", Classe = "Tle" });*/
         }
         public Eleve Add(Eleve item)
         {

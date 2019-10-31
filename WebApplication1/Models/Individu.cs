@@ -18,5 +18,12 @@ namespace WebApplication1.Models
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public string Age { get; set; }
+
+        public Individu(string Nom, string Prenom, string Age)
+        {
+            this.Nom = Nom;
+            this.Prenom = Prenom;
+            this.Age = Age;
+        }
     }
 }
